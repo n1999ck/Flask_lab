@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}">
+    <title>about</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    <div class="container">
+        <h1 class="h1 text-center">About Me</h1>
+        <div class="row">
+        <p>
+            Hey, I'm Nick. I'm a student at Columbus State University in Georgia working on a dual degree: 
+            a B.S. in computer science with a focus on web development and a B.A. in art history. 
+            I'm also editor-in-chief of CSU's newsmagazine, <a href="https://uproarcsu.com">The Uproar.</a>
+        </p>
+        <p>
+            As a web developer, I'm interested in full-stack and enjoy the design process.
+            I designed and built <a href="https://trackrightfarm.com/index.html">trackrightfarm.com</a>
+            for my mom's business as well as <a href="http://nickdm.me/portfolioSite/index.html">a portfolio site for my first internet programming class.</a>
+            The languages I've worked the most with include Java, HTML/CSS/JS with Bootstrap, and Python. 
+            I've been using Ubuntu daily since 2021 and am quite comfortable with Linux terminal work.
+        </p>
+        <p>
+            As an art historian, I mostly focus on Western art from the nineteenth century onwards.
+            I like to research art about human experiences like (homo)sexuality and death as well as art by 
+            Southern or Black artists. I've also worked on basic curation, exhibit installation, artist interviews, and exhibition reviews.
+        </p>
+        <p>
+            As editor-in-chief at The Uproar, I essentially run the publication and write articles
+            as time allows. The job includes everything from reporting on events, performing basic photojournalism,
+            editing others' work, managing projects and staff, collaborating with designers, illustrators, and photographers,
+            and promoting the paper on campus. It keeps me busy but gives me abundant learning opportunities and connections.
+        </p>
+        <p>
+            With my spare time, I do a lot of reading, collect obsolete technology including CDs and calculators, and study
+            whatever topics catch my interest, usually paleoanthropology.
+        </p>
+    </div>
+    <div class="row p-3">
+        <div class="col-md-4 offset-md-4">
+            <img class="img-thumbnail" src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/550918/1853991/main-image">
+        </div>
+        <div class="col">
+            <p><a href="https://www.metmuseum.org/art/collection/search/550918">Monkey from the Met collection</a> to fill out the page</p>
+        </div>
+        
+    </div>
+    {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
